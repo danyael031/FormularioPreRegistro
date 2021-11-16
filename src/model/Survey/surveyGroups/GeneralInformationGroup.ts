@@ -11,7 +11,7 @@ export const GeneralInformationGroup: SurveyModel = {
             questions: [
                 {
                     id: "gender_question",
-                    title: "¿Cual es tu genero?",
+                    title: "¿Cuál es tu género?",
                     type: "select",
                     field: "gender",
                     options: [
@@ -31,7 +31,7 @@ export const GeneralInformationGroup: SurveyModel = {
                 },
                 {
                     id: "birthday_question",
-                    title: "¿Cuando naciste?",
+                    title: "¿Cuándo naciste?",
                     type: "date",
                     field: "birthday",
                 }
@@ -42,7 +42,7 @@ export const GeneralInformationGroup: SurveyModel = {
             questions: [
                 {
                     id: generateUniqSerial(),
-                    title: "¿Donde vives actualmente?",
+                    title: "¿Dónde vives actualmente?",
                     type: "address",
                     field: "address",
                 }
@@ -53,22 +53,22 @@ export const GeneralInformationGroup: SurveyModel = {
             questions: [
                 {
                     id: generateUniqSerial(),
-                    title: "¿Cuando llegue el momento \ncómo podemos contactarte?",
+                    title: "¿Cómo podemos contactarte?",
                     type: "multiple-inputs",
                     field: '',
                     inputs: [
                         {
                             id: "email_contact_question",
                             name: "email",
-                            placeHolder: "algo@algo.com",
-                            label: "Ingresa tu correo electronico",
+                            placeHolder: "algo@mail.com",
+                            label: "Ingresa tu correo electrónico",
                             field: "email"
                         },
                         {
                             id: "phone_contact_question",
-                            name: "telefono celular a diez digitos",
+                            name: "teléfono celular a diez dígitos",
                             placeHolder: "(555) 555 5555",
-                            label: "Ingresa tu número a 10 digitos",
+                            label: "Ingresa tu número a 10 dígitos",
                             field: "phone"
                         }
                     ]
@@ -80,22 +80,22 @@ export const GeneralInformationGroup: SurveyModel = {
             questions: [
                 {
                     id: "elector_key_question",
-                    title: "Ahora sí, saca tu credencial de elector\nrecuerda que este campo es opcional, \nsi decides ponerlo nos ayudas a saber \ndónde tenemos presencia y validar tu información.\nSi aún no cumples 18 años no te preocupes\ndéjalo vacío.",
+                    title: "Saca tu credencial de elector (recuerda que este campo es opcional). Si decides ponerlo nos ayudas a saber dónde tenemos presencia y a validar tu información.\nSi aún no cumples 18 años no te preocupes, puedes dejarlo vacío.",
                     type: "multiple-inputs",
                     field: "",
                     inputs: [
                         {
                             id: "elector_key_question00",
                             name: "Clave de elector",
-                            placeHolder: "987987987989",
+                            placeHolder: "GMVLMR80070501M100",
                             label: "Ingresa clave",
                             field: "electorkey"
                         },
                         {
                             id: "elector_district_question01",
-                            name: "Distrito Electoral",
-                            placeHolder: "9999",
-                            label: "Ingresa distrito",
+                            name: "Sección Electoral",
+                            placeHolder: "0001",
+                            label: "Ingresa Sección",
                             field: "electoralDistrict"
                         }
                     ]
